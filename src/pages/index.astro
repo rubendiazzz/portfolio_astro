@@ -1,17 +1,43 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Badge from '../components/Badge.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/LinkedInIcon.astro";
 ---
 
 <Layout title="Web Developer | Portfolio">
-	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-44">
-			<img class="rounded-full size-12 mb-4" src="../../public/img/profile-pic.JPG" alt="ruubendiazz photo">
-			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
-				Hey, I'm Ruben <a href="https://www.linkedin.com/in/ruubendiazz" target="_blank" class="flex justify-center items-center"><Badge>Available for hire</Badge></div>
-			</h1>
-			<h2 class="text-xl opacity-80">+5 years of experience in the coding world, but mostly intermediate level. Web Developer & Software Engineer | Interested on Cybersecurity | Especialized on solving complex problems.</h2>
-		</section>
-	</main>
+  <main>
+    <section class="w-full mx-auto lg:w-[740px] py-44">
+      <img
+        class="rounded-full size-12 mb-4"
+        src="../../public/img/profile-pic.JPG"
+        alt="ruubendiazz photo"
+      />
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+        Hey, I'm Ruben <a
+          href="https://www.linkedin.com/in/ruubendiazz"
+          target="_blank"
+          class="flex justify-center items-center"
+          ><Badge>Available for hire</Badge></a
+        >
+      </h1>
+      <h2 class="text-2xl text-wrap">
+        <span class="text-yellow-300/90 opacity-95">+5 years of experience</span
+        > in the coding world, but mostly intermediate level. <span
+          class="text-pink-200/90 opacity-95"
+        >
+          Web Developer & Software Engineer | Interested on Cybersecurity |
+          Especialized on solving complex problems
+        </span>.
+      </h2>
+
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/ruubendiazz">
+            <LinkedInIcon class="size-6" />
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
 </Layout>
